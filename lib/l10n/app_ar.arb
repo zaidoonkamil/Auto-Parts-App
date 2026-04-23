@@ -1,0 +1,150 @@
+{
+  "@@locale": "ar",
+  "appTitle": "توتو بارت",
+  "language": "اللغة",
+  "chooseLanguage": "اختر اللغة",
+  "languageArabic": "العربية",
+  "languageKurdish": "الكردية السورانية",
+  "languageSubtitle": "بدّل لغة التطبيق بين العربية والسورانية",
+  "whatsapp": "واتساب",
+  "whatsappSubtitle": "دردش معنا هنا",
+  "unableToOpenLink": "تعذر فتح الرابط",
+  "favorites": "المفضلة",
+  "favoritesSubtitle": "المنتجات التي حفظتها للرجوع إليها",
+  "loginRequiredFirst": "يجب عليك تسجيل الدخول أولاً",
+  "logout": "تسجيل الخروج",
+  "logoutSubtitle": "إنهاء الجلسة الحالية والعودة للزائر",
+  "deleteAccount": "حذف الحساب",
+  "deleteAccountSubtitle": "حذف نهائي لجميع بيانات الحساب",
+  "deleteAccountTitle": "حذف الحساب",
+  "deleteAccountMessage": "هل أنت متأكد أنك تريد حذف حسابك بشكل نهائي؟\nلن تتمكن من التراجع عن هذا الإجراء، وسيتم حذف جميع بياناتك المرتبطة بالحساب.",
+  "cancel": "إلغاء",
+  "deletePermanently": "حذف نهائي",
+  "welcomeGuest": "أهلاً بك",
+  "welcomeGuestSubtitle": "سجّل الدخول للوصول إلى المفضلة وإدارة حسابك بسهولة",
+  "login": "تسجيل الدخول",
+  "loginSubtitle": "ادخل إلى حسابك للوصول إلى جميع ميزات المتجر",
+  "profileLanguageChanged": "تم تغيير لغة التطبيق",
+  "appBarTagline": "قطع غيار أصلية لسيارتك",
+  "operationCompleted": "تمت العملية",
+  "productAddedToBasketSuccess": "تمت إضافة المنتج إلى السلة بنجاح",
+  "searchProductsTitle": "ابحث عن منتج أو قطعة غيار",
+  "searchProductsSubtitle": "بطاريات، فلاتر، زيوت، بواجي",
+  "categoriesTitle": "الأقسام",
+  "categoriesSubtitle": "اختر القسم المناسب لسيارتك",
+  "featuredProductsTitle": "أبرز المنتجات",
+  "featuredProductsSubtitle": "تشكيلة متجددة من قطع الغيار تتغير في كل مرة",
+  "viewAll": "رؤية الكل",
+  "myAccount": "حسابي",
+  "myOrders": "طلباتي",
+  "home": "الرئيسية",
+  "basketTitle": "السلة",
+  "basketSubtitle": "راجع المنتجات قبل إكمال الطلب",
+  "currencyShort": "د.ع",
+  "quantity": "الكمية",
+  "totalLabel": "المجموع الكلي",
+  "checkout": "إكمال الشراء",
+  "orderTotalLabel": "إجمالي الطلب {amount} د.ع",
+  "@orderTotalLabel": {
+    "placeholders": {
+      "amount": {
+        "type": "Object"
+      }
+    }
+  },
+  "basketItemsSummary": "لديك {count} منتجات في سلة التسوق",
+  "@basketItemsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "Object"
+      }
+    }
+  },
+  "unitPriceLabel": "القطعة {amount}",
+  "@unitPriceLabel": {
+    "placeholders": {
+      "amount": {
+        "type": "Object"
+      }
+    }
+  },
+  "basketEmptyTitle": "السلة فارغة حالياً",
+  "basketEmptySubtitle": "أضف بعض قطع الغيار ثم ارجع هنا لإكمال الطلب",
+  "completeShoppingTitle": "إكمال الشراء",
+  "completeShoppingSubtitle": "أدخل معلومات التوصيل لإتمام الطلب",
+  "orderCreatedSuccess": "تمت عملية الطلب بنجاح",
+  "confirmOrder": "تأكيد الطلب",
+  "prepareItemsCount": "متابعة تجهيز {count} منتج",
+  "@prepareItemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "Object"
+      }
+    }
+  },
+  "reviewOrderInfo": "مراجعة معلومات الطلب",
+  "reviewOrderInfoSubtitle": "سيتم تجهيز {count} منتج بعد تأكيد بيانات التوصيل",
+  "@reviewOrderInfoSubtitle": {
+    "placeholders": {
+      "count": {
+        "type": "Object"
+      }
+    }
+  },
+  "paymentMethod": "طريقة الدفع",
+  "cashOnDelivery": "نقداً عند الاستلام",
+  "shippingInfo": "بيانات التوصيل",
+  "phoneNumber": "رقم الهاتف",
+  "enterPhoneNumber": "ادخل رقم الهاتف",
+  "pleaseEnterPhoneNumber": "رجاءاً ادخل رقم الهاتف",
+  "detailedAddress": "العنوان التفصيلي",
+  "enterDetailedAddress": "ادخل العنوان بالتفصيل",
+  "pleaseEnterDetailedAddress": "رجاءاً ادخل العنوان بالتفصيل",
+  "myOrdersSavedCount": "لديك {count} طلبات محفوظة في حسابك",
+  "@myOrdersSavedCount": {
+    "placeholders": {
+      "count": {
+        "type": "Object"
+      }
+    }
+  },
+  "orderDateLabel": "تاريخ الطلب {date}",
+  "@orderDateLabel": {
+    "placeholders": {
+      "date": {
+        "type": "Object"
+      }
+    }
+  },
+  "orderPieces": "عدد القطع",
+  "guestOrdersTitle": "سجل الدخول لمتابعة طلباتك",
+  "guestOrdersSubtitle": "ستظهر هنا جميع الطلبات الحالية والسابقة بعد تسجيل الدخول.",
+  "noOrdersTitle": "لا توجد طلبات بعد",
+  "noOrdersSubtitle": "عند إتمام أول طلب ستظهر بياناته هنا بشكل منظم.",
+  "productDetailsTitle": "تفاصيل المنتج",
+  "productDetailsSubtitle": "مواصفات القطعة وخيارات الطلب",
+  "availableNow": "متوفر حالياً",
+  "iraqiDinar": "دينار عراقي",
+  "addToBasket": "أضف للسلة",
+  "piecesCount": "{count} قطعة",
+  "@piecesCount": {
+    "placeholders": {
+      "count": {
+        "type": "Object"
+      }
+    }
+  },
+  "productDescription": "وصف المنتج",
+  "sellerInfo": "معلومات البائع",
+  "searchProductTitle": "البحث عن منتج",
+  "searchProductHint": "اكتب اسم القطعة أو المنتج",
+  "startTypingToSearch": "ابدأ بكتابة اسم المنتج للبحث",
+  "noMatchingResults": "لا توجد نتائج مطابقة",
+  "searchFailed": "حدث خطأ أثناء البحث",
+  "favoritesEmptyTitle": "لا توجد منتجات محفوظة حالياً",
+  "favoritesEmptySubtitle": "عند إضافة أي منتج إلى المفضلة سيظهر هنا بشكل منظم",
+  "notificationsTitle": "الإشعارات",
+  "notificationsSubtitle": "آخر التنبيهات والتحديثات الخاصة بك",
+  "notificationsEmptyTitle": "لا توجد إشعارات حالياً",
+  "notificationsEmptySubtitle": "عند وصول أي إشعار جديد سيظهر هنا مباشرة"
+}

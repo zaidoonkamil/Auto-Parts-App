@@ -1,0 +1,150 @@
+{
+  "@@locale": "ckb",
+  "appTitle": "تۆتۆ پارت",
+  "language": "زمان",
+  "chooseLanguage": "زمان هەڵبژێرە",
+  "languageArabic": "عەرەبی",
+  "languageKurdish": "کوردیی سۆرانی",
+  "languageSubtitle": "زمانی ئەپ بگۆڕە لەنێوان عەرەبی و سۆرانی",
+  "whatsapp": "واتساپ",
+  "whatsappSubtitle": "لێرە لەگەڵمان چات بکە",
+  "unableToOpenLink": "کردنەوەی بەستەرەکە نەکرا",
+  "favorites": "دڵخوازەکان",
+  "favoritesSubtitle": "ئەو بەرهەمانەی پاراستووتە بۆ گەڕانەوە بۆیان",
+  "loginRequiredFirst": "پێویستە سەرەتا بچیتە ژوورەوە",
+  "logout": "چوونەدەرەوە",
+  "logoutSubtitle": "دانانی کۆتایی بۆ دانیشتنی ئێستا و گەڕانەوە بۆ میوان",
+  "deleteAccount": "سڕینەوەی هەژمار",
+  "deleteAccountSubtitle": "سڕینەوەی کۆتایی بۆ هەموو زانیارییەکانی هەژمار",
+  "deleteAccountTitle": "سڕینەوەی هەژمار",
+  "deleteAccountMessage": "دڵنیاییت دەتەوێت هەژمارەکەت بە تەواوی بسڕیتەوە؟\nدوای ئەم هەنگاوە ناتوانیت بگەڕێیتەوە و هەموو زانیارییە پەیوەندیدارەکانت دەسڕدرێنەوە.",
+  "cancel": "هەڵوەشاندنەوە",
+  "deletePermanently": "سڕینەوەی کۆتایی",
+  "welcomeGuest": "بەخێربێیت",
+  "welcomeGuestSubtitle": "بچۆ ژوورەوە بۆ گەیشتن بە دڵخوازەکان و بەڕێوەبردنی هەژمارەکەت بە ئاسانی",
+  "login": "چوونەژوورەوە",
+  "loginSubtitle": "چوونە ژوورەوە بۆ هەژمارەکەت بۆ بەکارهێنانی هەموو تایبەتمەندییەکانی فرۆشگا",
+  "profileLanguageChanged": "زمانی ئەپ گۆڕدرا",
+  "appBarTagline": "پارچەی یەدەکی ڕەسەن",
+  "operationCompleted": "پرۆسەکە تەواو بوو",
+  "productAddedToBasketSuccess": "بەرهەمەکە بە سەرکەوتوویی زیادکرا بۆ سەبەتەکە",
+  "searchProductsTitle": "بەدوای بەرهەم یان پارچەی یەدەک بگەڕێ",
+  "searchProductsSubtitle": "باتری، فلتەر، زەیت، بۆاجی",
+  "categoriesTitle": "بەشەکان",
+  "categoriesSubtitle": "ئەو بەشە هەڵبژێرە کە بۆ ئۆتۆمبێلەکەت گونجاوە",
+  "featuredProductsTitle": "دیارترین بەرهەمەکان",
+  "featuredProductsSubtitle": "کۆمەڵەیەکی نوێبوونەوە لە پارچەی یەدەک کە هەموو جارێک دەگۆڕێت",
+  "viewAll": "بینینی هەموو",
+  "myAccount": "هەژمارم",
+  "myOrders": "داواکارییەکانم",
+  "home": "سەرەکی",
+  "basketTitle": "سەبەتە",
+  "basketSubtitle": "پێش تەواوکردنی داواکردن بەرهەمەکان بپشکنە",
+  "currencyShort": "د.ع",
+  "quantity": "بڕ",
+  "totalLabel": "کۆی گشتی",
+  "checkout": "تەواوکردنی کرین",
+  "orderTotalLabel": "کۆی داواکاری {amount} د.ع",
+  "@orderTotalLabel": {
+    "placeholders": {
+      "amount": {
+        "type": "Object"
+      }
+    }
+  },
+  "basketItemsSummary": "{count} بەرهەمت لە سەبەتی کریندا هەیە",
+  "@basketItemsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "Object"
+      }
+    }
+  },
+  "unitPriceLabel": "نرخی پارچە {amount}",
+  "@unitPriceLabel": {
+    "placeholders": {
+      "amount": {
+        "type": "Object"
+      }
+    }
+  },
+  "basketEmptyTitle": "سەبەتەکە ئێستا بەتاڵە",
+  "basketEmptySubtitle": "هەندێک پارچەی یەدەک زیاد بکە پاشان بگەڕێرەوە بۆ تەواوکردنی داواکاری",
+  "completeShoppingTitle": "تەواوکردنی کرین",
+  "completeShoppingSubtitle": "زانیارییەکانی گەیاندن بنووسە بۆ تەواوکردنی داواکاری",
+  "orderCreatedSuccess": "پرۆسەی داواکردن بە سەرکەوتوویی تەواو بوو",
+  "confirmOrder": "پشتڕاستکردنەوەی داواکاری",
+  "prepareItemsCount": "بەدواداچوون بۆ ئامادەکردنی {count} بەرهەم",
+  "@prepareItemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "Object"
+      }
+    }
+  },
+  "reviewOrderInfo": "پێداچوونەوە بە زانیارییەکانی داواکاری",
+  "reviewOrderInfoSubtitle": "دوای پشتڕاستکردنەوەی زانیارییەکانی گەیاندن، {count} بەرهەم ئامادە دەکرێت",
+  "@reviewOrderInfoSubtitle": {
+    "placeholders": {
+      "count": {
+        "type": "Object"
+      }
+    }
+  },
+  "paymentMethod": "شێوازی پارەدان",
+  "cashOnDelivery": "پارەدان لە کاتی وەرگرتندا",
+  "shippingInfo": "زانیاریی گەیاندن",
+  "phoneNumber": "ژمارەی مۆبایل",
+  "enterPhoneNumber": "ژمارەی مۆبایل بنووسە",
+  "pleaseEnterPhoneNumber": "تکایە ژمارەی مۆبایل بنووسە",
+  "detailedAddress": "ناونیشانی ورد",
+  "enterDetailedAddress": "ناونیشانەکە بە وردی بنووسە",
+  "pleaseEnterDetailedAddress": "تکایە ناونیشانەکە بە وردی بنووسە",
+  "myOrdersSavedCount": "{count} داواکاری لە هەژمارەکەتدا پارێزراون",
+  "@myOrdersSavedCount": {
+    "placeholders": {
+      "count": {
+        "type": "Object"
+      }
+    }
+  },
+  "orderDateLabel": "بەرواری داواکاری {date}",
+  "@orderDateLabel": {
+    "placeholders": {
+      "date": {
+        "type": "Object"
+      }
+    }
+  },
+  "orderPieces": "ژمارەی پارچەکان",
+  "guestOrdersTitle": "بچۆ ژوورەوە بۆ بەدواداچوونی داواکارییەکانت",
+  "guestOrdersSubtitle": "دوای چوونەژوورەوە هەموو داواکارییە ئێستایی و پێشووەکانت لێرە دەردەکەون.",
+  "noOrdersTitle": "هێشتا هیچ داواکارییەک نییە",
+  "noOrdersSubtitle": "کاتێک یەکەم داواکاری تەواو بکەیت، وردەکارییەکانی لێرە پیشان دەدرێن.",
+  "productDetailsTitle": "وردەکاریی بەرهەم",
+  "productDetailsSubtitle": "تایبەتمەندیی پارچەکە و هەڵبژاردەکانی داواکردن",
+  "availableNow": "ئێستا بەردەستە",
+  "iraqiDinar": "دیناری عێراقی",
+  "addToBasket": "زیادکردن بۆ سەبەتە",
+  "piecesCount": "{count} پارچە",
+  "@piecesCount": {
+    "placeholders": {
+      "count": {
+        "type": "Object"
+      }
+    }
+  },
+  "productDescription": "وەسفی بەرهەم",
+  "sellerInfo": "زانیاریی فرۆشیار",
+  "searchProductTitle": "گەڕان بەدوای بەرهەم",
+  "searchProductHint": "ناوی پارچە یان بەرهەم بنووسە",
+  "startTypingToSearch": "بە نووسینی ناوی بەرهەم دەستپێبکە بۆ گەڕان",
+  "noMatchingResults": "هیچ ئەنجامێکی هاوشێوە نەدۆزرایەوە",
+  "searchFailed": "هەڵەیەک ڕوویدا لە کاتی گەڕاندا",
+  "favoritesEmptyTitle": "ئێستا هیچ بەرهەمێکی پاشەکەوتکراو نییە",
+  "favoritesEmptySubtitle": "کاتێک هەر بەرهەمێک بۆ دڵخواز زیاد بکەیت لێرە پیشان دەدرێت",
+  "notificationsTitle": "ئاگادارکردنەوەکان",
+  "notificationsSubtitle": "دوایین ئاگادارکردنەوە و نوێکارییەکانی تایبەت بە تۆ",
+  "notificationsEmptyTitle": "ئێستا هیچ ئاگادارکردنەوەیەک نییە",
+  "notificationsEmptySubtitle": "کاتێک هەر ئاگادارکردنەوەیەکی نوێ بگات، لێرە دەردەکەوێت"
+}
