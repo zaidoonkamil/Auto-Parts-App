@@ -60,3 +60,7 @@ class AddToBasketErrorState extends UserStates {}
 class AddOrderLoadingState extends UserStates {}
 class AddOrderSuccessState extends UserStates {}
 class AddOrderErrorState extends UserStates {}
+
+class DeleteProductLoadingState extends UserStates {}
+class DeleteProductSuccessState extends UserStates {}
+class DeleteProductErrorState extends UserStates {}

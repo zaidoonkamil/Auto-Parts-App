@@ -399,6 +399,31 @@ class UserCubit extends Cubit<UserStates> {
     });
   }
 
+  void deleteProductFromSection({
+    required String productId,
+    required BuildContext context,
+  }) {
+    emit(DeleteProductLoadingState());
+    DioHelper.deleteData(
+      url: '/products/$productId',
+    ).then((value) {
+      productCat.removeWhere((item) => item.id.toString() == productId);
+      products.removeWhere((item) => item.id.toString() == productId);
+      showToastSuccess(
+        text: 'تم حذف المنتج بنجاح',
+        context: context,
+      );
+      emit(DeleteProductSuccessState());
+    }).catchError((error) {
+      if (error is DioError) {
+        showToastError(text: error.toString(), context: context);
+        emit(DeleteProductErrorState());
+      } else {
+        print("Unknown Error: $error");
+      }
+    });
+  }
+
 
   FavoritesModel? favoritesModel;
   void getFavorites({required BuildContext context,}) {

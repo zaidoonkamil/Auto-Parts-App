@@ -70,6 +70,7 @@ class Home extends StatelessWidget {
               body: Column(
                 children: [
                   const CustomAppBar(),
+
                   Expanded(
                     child: cubit.getCatModel.isEmpty
                         ? CircularProgressHome()

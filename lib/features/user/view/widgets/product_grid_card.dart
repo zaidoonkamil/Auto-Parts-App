@@ -25,6 +25,8 @@ class UserProductGridCard extends StatelessWidget {
     required this.imageSeller,
     required this.locationSeller,
     required this.nameSeller,
+    this.showDelete = false,
+    this.onDelete,
   });
 
   final UserCubit cubit;
@@ -38,6 +40,8 @@ class UserProductGridCard extends StatelessWidget {
   final String imageSeller;
   final String locationSeller;
   final String nameSeller;
+  final bool showDelete;
+  final VoidCallback? onDelete;
 
   @override
   Widget build(BuildContext context) {
@@ -120,6 +124,27 @@ class UserProductGridCard extends StatelessWidget {
                       ),
                     ),
                   ),
+                  if (showDelete)
+                    Positioned(
+                      top: 10,
+                      left: 10,
+                      child: GestureDetector(
+                        onTap: onDelete,
+                        child: Container(
+                          width: 34,
+                          height: 34,
+                          decoration: BoxDecoration(
+                            color: accentColor.withValues(alpha: 0.92),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Icon(
+                            Icons.delete_outline,
+                            color: Colors.white,
+                            size: 18,
+                          ),
+                        ),
+                      ),
+                    ),
                 ],
               ),
             ),

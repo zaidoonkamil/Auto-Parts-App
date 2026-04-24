@@ -5,7 +5,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/network/remote/dio_helper.dart';
 import '../../../../core/styles/themes.dart';
 import '../../../../core/widgets/show_toast.dart';
+import '../../../../core/ navigation/navigation.dart';
 import '../../../user/model/CatModel.dart';
+import '../../../user/view/Section.dart';
 import '../../cubit/cubit.dart';
 import '../../cubit/states.dart';
 
@@ -73,81 +75,101 @@ class AdminSubcategoriesPage extends StatelessWidget {
                               final imageUrl = subcategory.images.isNotEmpty ? subcategory.images.first : '';
                               final cleanImageUrl = imageUrl.replaceAll(RegExp(r'[\[\]]'), '');
 
-                              return Container(
-                                padding: const EdgeInsets.all(12),
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(22),
-                                  boxShadow: const [
-                                    BoxShadow(
-                                      color: Color(0x0F000000),
-                                      blurRadius: 20,
-                                      offset: Offset(0, 10),
+                              return GestureDetector(
+                                onTap: () {
+                                  navigateTo(
+                                    context,
+                                    Section(
+                                      categoriesId: subcategory.id.toString(),
+                                      categoryTitle: subcategory.name,
                                     ),
-                                  ],
-                                ),
-                                child: Column(
-                                  children: [
-                                    Expanded(
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(16),
-                                        child: cleanImageUrl.isEmpty
-                                            ? Container(
-                                                color: mutedSurfaceColor,
-                                                alignment: Alignment.center,
-                                                child: const Icon(
-                                                  Icons.widgets_outlined,
-                                                  color: secondTextColor,
-                                                  size: 30,
+                                  );
+                                },
+                                child: Container(
+                                  padding: const EdgeInsets.all(12),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(22),
+                                    boxShadow: const [
+                                      BoxShadow(
+                                        color: Color(0x0F000000),
+                                        blurRadius: 20,
+                                        offset: Offset(0, 10),
+                                      ),
+                                    ],
+                                  ),
+                                  child: Column(
+                                    children: [
+                                      Expanded(
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(16),
+                                          child: cleanImageUrl.isEmpty
+                                              ? Container(
+                                                  color: mutedSurfaceColor,
+                                                  alignment: Alignment.center,
+                                                  child: const Icon(
+                                                    Icons.widgets_outlined,
+                                                    color: secondTextColor,
+                                                    size: 30,
+                                                  ),
+                                                )
+                                              : Image.network(
+                                                  '$url/uploads/$cleanImageUrl',
+                                                  width: double.infinity,
+                                                  fit: BoxFit.cover,
                                                 ),
-                                              )
-                                            : Image.network(
-                                                '$url/uploads/$cleanImageUrl',
-                                                width: double.infinity,
-                                                fit: BoxFit.cover,
-                                              ),
-                                      ),
-                                    ),
-                                    const SizedBox(height: 10),
-                                    Text(
-                                      subcategory.name,
-                                      textAlign: TextAlign.center,
-                                      maxLines: 2,
-                                      overflow: TextOverflow.ellipsis,
-                                      style: const TextStyle(
-                                        color: secondPrimaryColor,
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w800,
-                                      ),
-                                    ),
-                                    const SizedBox(height: 10),
-                                    SizedBox(
-                                      width: double.infinity,
-                                      child: ElevatedButton.icon(
-                                        onPressed: () {
-                                          cubit.deleteCategories(
-                                            id: subcategory.id.toString(),
-                                            context: context,
-                                          );
-                                        },
-                                        style: ElevatedButton.styleFrom(
-                                          backgroundColor: accentColor,
-                                          padding: const EdgeInsets.symmetric(vertical: 12),
-                                          shape: RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(14),
-                                          ),
-                                        ),
-                                        icon: const Icon(Icons.delete_outline, color: Colors.white, size: 18),
-                                        label: const Text(
-                                          'حذف',
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                          ),
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                      const SizedBox(height: 10),
+                                      Text(
+                                        subcategory.name,
+                                        textAlign: TextAlign.center,
+                                        maxLines: 2,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: const TextStyle(
+                                          color: secondPrimaryColor,
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w800,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 6),
+                                      const Text(
+                                        'اضغط لعرض المنتجات',
+                                        style: TextStyle(
+                                          color: secondTextColor,
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 10),
+                                      SizedBox(
+                                        width: double.infinity,
+                                        child: ElevatedButton.icon(
+                                          onPressed: () {
+                                            cubit.deleteCategories(
+                                              id: subcategory.id.toString(),
+                                              context: context,
+                                            );
+                                          },
+                                          style: ElevatedButton.styleFrom(
+                                            backgroundColor: accentColor,
+                                            padding: const EdgeInsets.symmetric(vertical: 12),
+                                            shape: RoundedRectangleBorder(
+                                              borderRadius: BorderRadius.circular(14),
+                                            ),
+                                          ),
+                                          icon: const Icon(Icons.delete_outline, color: Colors.white, size: 18),
+                                          label: const Text(
+                                            'حذف',
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               );
                             },

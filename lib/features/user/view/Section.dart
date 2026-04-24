@@ -38,6 +38,7 @@ class Section extends StatelessWidget {
         builder: (context, state) {
           final cubit = UserCubit.get(context);
           final localeCode = Localizations.localeOf(context).languageCode;
+          final bool isAdminView = adminOrUser == 'admin';
 
           return SafeArea(
             child: Scaffold(
@@ -96,6 +97,14 @@ class Section extends StatelessWidget {
                                       children: [
                                         GestureDetector(
                                           onTap: () {
+                                            if (isAdminView) {
+                                              cubit.deleteProductFromSection(
+                                                productId: product.id.toString(),
+                                                context: context,
+                                              );
+                                              return;
+                                            }
+
                                             if (token != '') {
                                               cubit.addToBasket(
                                                 productId: product.id.toString(),
@@ -110,7 +119,7 @@ class Section extends StatelessWidget {
                                             width: 40,
                                             height: 40,
                                             decoration: BoxDecoration(
-                                              color: secondPrimaryColor,
+                                              color: isAdminView ? accentColor : secondPrimaryColor,
                                               shape: BoxShape.circle,
                                               boxShadow: [
                                                 BoxShadow(
@@ -121,9 +130,11 @@ class Section extends StatelessWidget {
                                                 ),
                                               ],
                                             ),
-                                            child: const Center(
+                                            child: Center(
                                               child: FaIcon(
-                                                FontAwesomeIcons.basketShopping,
+                                                isAdminView
+                                                    ? FontAwesomeIcons.trashCan
+                                                    : FontAwesomeIcons.basketShopping,
                                                 size: 16,
                                                 color: Colors.white,
                                               ),
@@ -224,6 +235,13 @@ class Section extends StatelessWidget {
                                 imageSeller: product.seller.image,
                                 locationSeller: product.seller.location,
                                 nameSeller: product.seller.name,
+                                showDelete: isAdminView,
+                                onDelete: () {
+                                  cubit.deleteProductFromSection(
+                                    productId: product.id.toString(),
+                                    context: context,
+                                  );
+                                },
                               );
                             },
                           ),
