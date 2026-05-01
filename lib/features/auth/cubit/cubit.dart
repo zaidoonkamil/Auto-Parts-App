@@ -233,6 +233,7 @@ class LoginCubit extends Cubit<LoginStates> {
           text: error.response?.data["error"] ?? "حدث خطأ أثناء إرسال الكود",
           context: context,
         );
+        print(error.response?.data["error"]);
         emit(ForgotPasswordRequestErrorState());
       } else {
         print("Unknown Error: $error");

@@ -649,6 +649,7 @@ class AdminCubit extends Cubit<AdminStates> {
     }).catchError((error) {
       if (error is DioError) {
         showToastError(text: _whatsAppErrorMessage(error), context: context);
+        print(_whatsAppErrorMessage(error));
         emit(WhatsAppErrorState());
       } else {
         print("Unknown Error: $error");
@@ -668,6 +669,7 @@ class AdminCubit extends Cubit<AdminStates> {
     }).catchError((error) {
       if (error is DioError) {
         showToastError(text: _whatsAppErrorMessage(error), context: context);
+        print(_whatsAppErrorMessage(error));
         emit(WhatsAppErrorState());
       } else {
         print("Unknown Error: $error");
@@ -688,6 +690,7 @@ class AdminCubit extends Cubit<AdminStates> {
     }).catchError((error) {
       if (error is DioError) {
         showToastError(text: _whatsAppErrorMessage(error), context: context);
+        print(_whatsAppErrorMessage(error));
         emit(WhatsAppErrorState());
       } else {
         print("Unknown Error: $error");
@@ -708,6 +711,7 @@ class AdminCubit extends Cubit<AdminStates> {
     }).catchError((error) {
       if (error is DioError) {
         showToastError(text: _whatsAppErrorMessage(error), context: context);
+        print(_whatsAppErrorMessage(error));
         emit(WhatsAppErrorState());
       } else {
         print("Unknown Error: $error");
@@ -734,6 +738,7 @@ class AdminCubit extends Cubit<AdminStates> {
     }).catchError((error) {
       if (error is DioError) {
         showToastError(text: _whatsAppErrorMessage(error), context: context);
+        print(_whatsAppErrorMessage(error));
         emit(WhatsAppErrorState());
       } else {
         print("Unknown Error: $error");
